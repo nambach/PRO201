@@ -1,0 +1,241 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-Oct-2016, 21:32:59
+    Author     : VT
+*/
+.menu li a{
+    color: #ff6600;
+}
+.menu li:hover a{
+    color: white;
+}
+.main-nav {
+    font-family: Constantia, serif;
+    display: block;
+    list-style-type: none;
+    float: right;
+    margin-top: 35px;
+    margin-right: 5%;
+}
+.main-nav >li {
+    display: inline-block;
+}
+.main-nav > li > a {
+    font-size: 16pt;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-left: 5px solid transparent;
+}
+ul.menu {
+    display: none;
+    width: 225px;
+    font-size: 14pt;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+    border-left: 5px solid #ff6600;
+    background-color: transparent;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0px;
+}
+
+/* TỪ ĐÂY   Code dành cho li cuối canh sát vào lề phải*/
+.main-nav >li:last-child >ul {
+    right:5%;
+}
+.main-nav >li:last-child >a {
+    border: 1px solid transparent;
+    border-right: 5px solid transparent;
+}
+.main-nav >li:last-child:hover >a, #ul-last-child {
+    border: 1px solid #ff6600;
+    border-right: 5px solid #ff6600;
+}
+#ul-last-child {
+    width: 200px;
+}
+/* TỚI ĐÂY  Code dành cho li cuối canh sát vào lề phải*/    
+
+/* TỪ ĐÂY   Code canh chỉnh menu xổ xuống*/
+ul.menu >li {
+    padding: 10px 19px;
+}
+ul.menu >li:first-child {
+    padding-top: 15px;
+}
+ul.menu >li:last-child {
+    padding-bottom: 20px;
+}
+ul.menu li>a {
+    text-decoration: none;
+}
+/* TỚI ĐÂY  Code canh chỉnh menu xổ xuống*/
+.main-nav >li:hover >a{
+    border: 1px solid #ff6600;
+    border-left: 5px solid #ff6600;
+    color: #ff6600;
+    cursor: pointer;
+}
+.main-nav >li:hover >ul{
+    display: block;
+    cursor: pointer;
+    position: absolute;
+}
+.menu >li:hover {
+    color: white;
+    background-color: #ff9933;
+}          
+.main-nav >li:hover ul.menu, .main-nav >li:hover >a {
+    background-color: rgba(0,0,0,0.7);
+}
+.nav {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+}
+#logo1, #logo2{
+    position: relative;
+    top: 12.5px;
+    left: 5%;
+    height: 75px;
+    cursor: pointer;
+}
+#logo2 {
+    height: 90px;
+    top: 10px;
+}
+.sub-nav {
+    display: block;
+    list-style-type: none;
+}
+.sub-nav >li {
+    display: inline-block;
+    margin: -3px 50px 0px 0px;
+    float: right;
+}
+.sub-nav a {
+    font-size: 12pt;
+    color: white;
+    cursor: pointer;
+}
+.div-main-nav {
+    width: 100%; height: 100px; background: linear-gradient(rgba(0,0,0,0.7),transparent);float: left;
+}
+
+@media only screen and (max-width: 750px) {
+    .main-nav {
+        font-family: Constantia, serif;
+        display: block;
+        list-style-type: none;
+        float: right;
+        margin-top: 35px;
+        margin-right: 0%;
+    }
+    .main-nav > li > a {
+        font-size: 13pt;
+        color: white;
+        padding: 10px 10px;
+        border: 1px solid transparent;
+        border-left: 5px solid transparent;
+    }
+    ul.menu {
+        display: none;
+        width: 150px;
+        font-size: 11pt;
+        color: #ff6600;
+        border: 1px solid #ff6600;
+        border-left: 5px solid #ff6600;
+        background-color: transparent;
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 0px;
+    }
+
+    /* TỪ ĐÂY   Code dành cho li cuối canh sát vào lề phải*/
+    .main-nav >li:last-child >ul {
+        right:0%;
+    }
+    .main-nav >li:last-child >a {
+        border: 1px solid transparent;
+        border-right: 5px solid transparent;
+    }
+    .main-nav >li:last-child:hover >a, #ul-last-child {
+        border: 1px solid #ff6600;
+        border-right: 5px solid #ff6600;
+    }
+    #ul-last-child {
+        width: 150px;
+    }
+    /* TỚI ĐÂY  Code dành cho li cuối canh sát vào lề phải*/    
+
+    /* TỪ ĐÂY   Code canh chỉnh menu xổ xuống*/
+    ul.menu >li {
+        padding: 10px 19px;
+    }
+    ul.menu >li:first-child {
+        padding-top: 15px;
+    }
+    ul.menu >li:last-child {
+        padding-bottom: 20px;
+    }
+    ul.menu li>a {
+        text-decoration: none;
+    }
+    /* TỚI ĐÂY  Code canh chỉnh menu xổ xuống*/
+    .main-nav >li:hover >a{
+        border: 1px solid #ff6600;
+        border-left: 5px solid #ff6600;
+        color: #ff6600;
+        cursor: pointer;
+    }
+    .main-nav >li:hover >ul{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+    }
+    .menu >li:hover {
+        color: white;
+        background-color: #ff9933;
+    }          
+    .main-nav >li:hover ul.menu, .main-nav >li:hover >a {
+        background-color: rgba(0,0,0,0.7);
+    }
+    .nav {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        z-index: 3;
+    }
+    #logo2{
+        display: none;
+    }
+    #logo1 {
+        margin-top: 3%;
+        height: 40px;
+    }
+    .sub-nav {
+        display: block;
+        list-style-type: none;
+    }
+    .sub-nav >li {
+        display: inline-block;
+        margin: -3px 20px 0px 0px;
+        float: right;
+    }
+    .sub-nav a {
+        font-size: 11pt;
+        color: white;
+        cursor: pointer;
+    }
+    .div-main-nav {
+        width: 100%; height: 100px; background: linear-gradient(rgba(0,0,0,0.7),transparent);float: left;
+    }
+}

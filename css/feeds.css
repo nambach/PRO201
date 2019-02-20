@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-Oct-2016, 09:59:20
+    Author     : VT
+*/
+.main-feed {
+    font-family: arial, sans-serif;
+    font-size: 11.5pt;
+    width: 50%;
+    margin-left: 12.5%;
+    float: left;
+    margin-bottom: 2%;
+}
+.main-feed h1 {
+    font-size: 25pt;
+}
+.main-feed p {
+    line-height: 21px;
+}
+.date {
+    font-size: 10pt;
+    color: #999999;
+}
+.author {
+    text-align: right;
+}
+.main-feed img {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: -0.5%;
+}
+.moreover {
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+.img-tit {
+    width: 90%;
+    margin-left: 5%;
+    padding: 8px 0px;
+    display: block;
+    text-align: center;
+    font-size: 10pt;
+    background-color: rgb(244,244,244);
+    color: #999999;
+    font-style: italic;
+}
+.related-feed {
+    width: 25%;
+    margin-left: 7.5%;
+    float: left;
+}
+.related-feed >div:first-child {
+    width: 100%;
+    padding: 7px 0px;
+    border-bottom: 3px solid #ff6600;
+}
+.related-feed >div:first-child span {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px
+}
+.relate {
+    width: 100%;
+    margin: 5% 0%;
+}
+.relate img {
+    cursor: pointer;
+    width: 33%;
+    height: 100%;
+    float: left;
+    margin-top: 20px;
+    margin-right: 5%;
+}
+.relate p {
+    cursor: pointer;
+    width: 60%;
+    float: left;
+    font-size: 11pt;
+}
+.relate p>span {
+    margin-top: 15%;
+    float: left;
+    width: 60%;
+    font-size: 10pt;
+    color: #cccccc;
+}

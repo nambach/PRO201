@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-Oct-2016, 19:41:51
+    Author     : VT
+*/
+
+label span {
+    color: red;
+}
+label, input {
+    display: inline-block;
+    width: 20%;
+    margin:10px 2.5%;
+}
+form, button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13pt;
+    line-height: 1.7em;
+}
+button[type=submit] {
+    margin: 10px 30%;
+}
+label {
+    text-align: right;
+}
+input[type=radio] {
+    width: auto;
+    margin-right: 0;
+}
+.main-reg {
+    width: 100%;
+    position: relative;
+}

@@ -1,0 +1,187 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-Oct-2016, 19:29:02
+    Author     : VT
+*/
+
+body >div {
+    position: relative;
+    width: 100%;
+}
+.div-main-nav {
+    width: 100%; height: 100px; background: white; float: left;
+}
+.bg {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    padding-top: 1%; 
+}
+.bg img {
+    width: 100%;
+    margin-top: -550px;
+}
+.headlist {
+    padding-left: 10%;
+    width: 90%;
+}
+.headlist h1{
+    font-family: Constantia, serif;
+    color: #414141;
+    font-weight: 100;
+    font-size: 2.5em;
+}
+.list { 
+    display: inline-block;
+    float: left;
+    margin-left: 10%;
+    padding: 20px 0px;
+    width: 18%;
+}
+.list >div{
+    display: block;
+}
+.list >div:hover >a{
+    text-decoration: underline;
+    cursor: pointer
+}
+.list a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14pt;
+    line-height: 2;
+    text-decoration: none;
+    color: #ff3300;
+}
+.main-about {
+    margin-bottom: 7.5%;
+    float: left; 
+    display: inline-block; 
+    width: 60%; 
+    padding: 1% 3%;
+    margin-left: 1.5%; 
+    /*                border: 1px solid #ff6600;*/
+}
+.main-about h2, .main-about h4 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 300;
+}
+.main-about p, .main-about li, .main-about div, .main-about b, table {
+    list-style-type: circle;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13pt;
+    line-height: 1.7em;
+}
+.main-about span, .main-about h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.buffer {
+    width: 100%;
+    height: 50px;
+}
+.main-about h3 >img {
+    float: right; 
+    margin-right: 3%; 
+    margin-top: -3%;
+    height: 50px; 
+    cursor: pointer;
+}
+.img {
+    width: 80%; margin: 5% 10% 1% 10%;
+}
+.img-des {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: #999999
+}
+
+@media only screen and (max-width: 750px) {
+    .bg {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        padding-top: 1%; 
+    }
+    .bg img {
+        width: 100%;
+        margin-top: -150px;
+    }
+    .headlist {
+        padding-left: 10%;
+        width: 90%;
+    }
+    .headlist h1{
+        font-weight: 100;
+        font-size: 2.2em;
+    }
+    .list { 
+        display: inline-block;
+        float: left;
+        margin-left: 5%;
+        padding: 20px 0px;
+        width: 18%;
+    }
+    .list >div{
+        display: block;
+    }
+    .list >div:hover >a{
+        text-decoration: underline;
+        cursor: pointer
+    }
+    .list a {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 10.5pt;
+        line-height: 2;
+        text-decoration: none;
+        color: #ff3300;
+    }
+    .main-about {
+        margin-bottom: 7.5%;
+        float: left; 
+        display: inline-block; 
+        width: 65%; 
+        padding: 1% 3%;
+        margin-left: 1.5%; 
+        /*                border: 1px solid #ff6600;*/
+    }
+    .main-about h2, .main-about h4 {
+        font-family: 'Noto Serif', serif;
+        font-weight: 300;
+    }
+    .main-about p, .main-about li, .main-about div, .main-about b, table {
+        list-style-type: circle;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 11.5pt;
+        line-height: 1.7em;
+    }
+    .main-about span, .main-about h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .buffer {
+        width: 100%;
+        height: 50px;
+    }
+    .main-about h3 >img {
+        float: right; 
+        margin-right: 3%; 
+        margin-top: -3%;
+        height: 50px; 
+        cursor: pointer;
+    }
+    .img {
+        width: 80%; margin: 5% 10% 1% 10%;
+    }
+    .img-des {
+        display: block;
+        text-align: center;
+        font-style: italic;
+        color: #999999
+    }
+
+}

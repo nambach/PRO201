@@ -1,0 +1,115 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-Oct-2016, 16:44:09
+    Author     : VT
+*/
+.column-news {
+    height: inherit;
+    width: 29%;
+    padding: 1.5%; 
+    float: left
+}
+.column-news:first-child {
+    margin-left: 2%;
+}
+.news-img {
+    width: 100%;
+    max-height: 150px;
+    overflow: hidden;
+}
+.column-news:first-child .news-img {
+    border-bottom: 5px solid #ff6600;
+}
+.column-news:nth-child(2) .news-img {
+    border-bottom: 5px solid #ff6600;
+}
+.column-news:last-child .news-img {
+    border-bottom: 5px solid #ff6600;
+}
+.column-news img {
+    width: 100%;
+    margin-bottom: -10px;
+}
+.news-content {
+    color: #2d2d2d;
+    padding: 0px 15px;
+    font-stretch: semi-expanded;
+}
+.news-content p:first-child {
+    font-variant: small-caps;
+}
+.news-text {
+    font-style: italic;
+}
+.news-content span, i {
+    font-size: 1.2em;
+    color: #ff6600;
+    font-weight: 500;
+}
+.news-content span:hover {
+    text-decoration: underline;
+    cursor: pointer
+}
+.news {
+    margin-top: 50px;
+}
+.news h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+    .column-news {
+        height: inherit;
+        width: 47.5%;
+        padding: 1%; 
+        float: left
+    }
+    .column-news:nth-child(2) {
+        display: none;
+    }
+    .column-news:first-child {
+        margin-left: 1%;
+    }
+    .news-img {
+        width: 100%;
+        max-height: 150px;
+        overflow: hidden;
+    }
+    .column-news img {
+        width: 100%;
+        margin-bottom: -10px;
+    }
+    .news-content {
+        color: #2d2d2d;
+        padding: 0px 15px;
+        font-stretch: semi-expanded;
+    }
+    .news-content p:first-child {
+        font-variant: small-caps;
+    }
+    .news-text {
+        font-style: italic;
+    }
+    .news-content span, i {
+        font-size: 1.2em;
+        color: #ff6600;
+        font-weight: 500;
+    }
+    .news-content span:hover {
+        text-decoration: underline;
+        cursor: pointer
+    }
+    .news {
+        margin-top: 50px;
+    }
+    .news h2:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+}

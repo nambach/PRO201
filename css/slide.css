@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-Sep-2016, 10:32:44
+    Author     : VT
+*/
+#slide >div{
+    width: 20%; height: 500px;display: inline-block; float: left
+}
+.right-in{
+    transform: translateX(-20%);
+    transition: transform 0.5s;
+}
+.slide {
+    width: 500%; height: 450px; position: absolute; left: 0; top: 0px; overflow: hidden;
+
+}
+#slide img {
+    margin-top: -15%;
+    width: 100%;
+}
+.feeds {
+    height: 480px; overflow-x: hidden; 
+}
+.slide-bar {
+    height: 10px; width: 100%; position: absolute; bottom: 80px
+}
+.slide-bar span {
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgba(255,255,255,0.3);
+    background-color: rgba(0,0,0,0.3);
+}
+.slide-bar >span:first-child:hover, .slide-bar >span:last-child:hover {
+    background-color: rgba(255,102,0,0.8);
+    border: 1px solid white;
+}
+.slide-bar >span >span {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+    #slide img {
+        margin-top: 0%;
+        width: 100%;
+    }
+    .slide-bar {
+        height: 5px; width: 100%; position: absolute; bottom: 80px
+    }
+    .slide {
+        width: 500%; height: 300px; position: absolute; left: 0; top: 0px; overflow: hidden;
+
+    }
+    .slide {
+        width: 500%; height: 300px; position: absolute; left: 0; top: 0px; overflow: hidden;
+
+    }
+    .feeds {
+        height: 330px; overflow-x: hidden; 
+    }
+    .slide-bar span {
+        font-size: 0;
+        padding: 5px;
+        color: transparent;
+        border-radius: 100px;
+        border: 1px solid rgba(255,255,255,0.3);
+        background-color: rgba(0,0,0,0.3);
+    }
+    .slide-bar >span:first-child, .slide-bar >span:last-child {
+        border-radius: 0px;
+        font-size: 11pt;
+        color: white;
+        border: 1px solid rgba(255,255,255,0.3);
+        background-color: rgba(0,0,0,0.3);
+    }
+}

@@ -1,0 +1,203 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-Oct-2016, 10:00:48
+    Author     : VT
+*/
+.faculty {
+    background-color: white;
+    font-family: Arial;
+    line-height: 21px;
+    width: 70%;
+    margin-left: -2%;
+    float: left;
+}
+.bg {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    padding-top: 1%; 
+}
+.faculty-title {
+    font-family: 'Noto Serif', serif;
+    width: 90%;
+    position: relative;
+    top: -75px;
+    left: -200px;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 30pt;
+}
+.buffer {
+    width: 100%;
+    height: 50px;
+}
+.aside-body {
+    width: 20%;
+    padding: 1%;
+}
+.aside-body >div {
+    margin: 3% 0%;
+    width: 90%;
+    padding: 5%;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+    font-size: 14pt;
+}
+.aside-body >div:hover {
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+}
+/*.aside-body >div:first-child {
+    display: none;
+}*/
+.faculty-body, .aside-body {
+    float: left
+}
+.faculty-body {
+    border-top: 5px solid #ff6600;
+    width: 71%;
+    padding: 2%;
+    font-size: 12pt;
+}
+.fac-des {
+    width: 98%;
+    padding: 10px 0px;
+    border-bottom:  1.5px solid #cccccc
+}
+.fac-des span {
+    display: inline-block;
+    width: 49.5%;
+}
+.link {
+    font-size: 10.5pt;
+    color: #cccccc;
+    margin-bottom: 3%;
+}
+.link span:hover {
+    cursor: pointer;
+}
+.link span:last-child {
+    cursor: pointer;
+    color: black;
+}
+.hook h3 {
+    margin: 0;
+    color: #ff6600;
+    display: block;
+    padding: 10px 0px;
+    border-top: 1px solid #cccccc;
+}
+.hook h3:hover {
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+}
+.hook div {
+    padding: 0px 10px;
+    margin-top: 2%;
+    font-size: 11.5pt;
+}
+.hook {
+    overflow: hidden;
+    height: 42px;
+}
+iframe {
+    width: 90%;
+    margin-left: 2.5%;
+}
+
+@media only screen and (max-width: 750px) {
+    .faculty {
+        background-color: white;
+        font-family: Arial;
+
+        width: 98%;
+        margin-left: 1%;
+        clear: both;
+    }
+    .faculty * {
+        line-height: 19px;
+        font-size: 10pt;
+    }
+    .bg {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        padding-top: 1%; 
+    }
+    .faculty-title {
+        font-family: 'Noto Serif', serif;
+        width: 90%;
+        position: relative;
+        top: -150px;
+        left: auto;
+        color: whitesmoke;
+        font-weight: 700;
+        font-size: 30pt;
+    }
+    .buffer {
+        width: 100%;
+        height: 50px;
+    }
+    .aside-body {
+        display: none;
+    }
+    .faculty-body {
+        border-top: 5px solid #ff6600;
+        width: 96%;
+        padding: 2%;
+        font-size: 12pt;
+    }
+    .fac-des {
+        width: 98%;
+        padding: 10px 0px;
+        border-bottom:  1.5px solid #cccccc
+    }
+    .fac-des span {
+        display: inline-block;
+        width: 49.5%;
+    }
+    .link {
+        font-size: 10.5pt;
+        color: #cccccc;
+        margin-bottom: 3%;
+    }
+    .link span:hover {
+        cursor: pointer;
+    }
+    .link span:last-child {
+        cursor: pointer;
+        color: black;
+    }
+    .hook h3 {
+        margin: 0;
+        font-size: 12pt;
+        color: #ff6600;
+        display: block;
+        padding: 10px 0px;
+        border-top: 1px solid #cccccc;
+    }
+    .hook h3:hover {
+        background-color: #ff6600;
+        color: white;
+        cursor: pointer;
+    }
+    .hook div {
+        padding: 0px 10px;
+        margin-top: 2%;
+        font-size: 11.5pt;
+    }
+    .hook {
+        overflow: hidden;
+        height: 42px;
+    }
+    iframe {
+        width: 90%;
+        margin-left: 2.5%;
+    }
+}

@@ -1,0 +1,103 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-Oct-2016, 19:11:39
+    Author     : VT
+*/
+
+.footer {
+    width: 100%; clear: both;
+    background-color: rgb(244,244,244);
+    list-style-type: none;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    color: #ff6600;
+}
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+.footer ul{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+}
+.footer >ul {
+    margin-left: 50px;
+}
+.footer >ul >li {
+    display: inline-block;
+    float: left;
+}
+.footer >ul >li >ul >li {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 10.5pt;
+}
+.footer >ul >li >ul >li a{
+    font-size: 11pt;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.credit {
+    margin-top: 0px;
+    padding-top:  2px;
+    background-color: black;
+    color: #ff6600;
+    text-align: center;
+    font-size: 11.5pt;
+    line-height: 2.2em;
+}
+
+@media only screen and (max-width: 750px) {
+    .footer {
+        width: 100%; clear: both;
+        background-color: rgb(244,244,244);
+        list-style-type: none;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        color: #ff6600;
+    }
+    .footer a {
+        text-decoration: none;
+        color: black;
+    }
+    .footer ul{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-right: 25px;
+    }
+    .footer >ul {
+        margin-left: 20px;
+    }
+    .footer >ul >li {
+        font-size: 9.5pt;
+        display: inline-block;
+        float: left;
+    }
+    .footer >ul >li >ul >li {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 10pt;
+    }
+    .footer >ul >li >ul >li a{
+        font-size: 10pt;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .credit {
+        margin-top: 0px;
+        padding-top:  2px;
+        background-color: black;
+        color: #ff6600;
+        text-align: center;
+        font-size: 8pt;
+        line-height: 1.5em;
+    }
+
+}
