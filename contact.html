@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="icon" href="resource/fptico.png" type="image/x-icon"/>
+        <title>Liên hệ | Đại học FPT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/nav_other.css"/>
+        <link rel="stylesheet" href="css/footer-credit.css"/>
+        <link rel="stylesheet" href="css/about.css"/>
+        <link rel="stylesheet" href="css/feeds.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Slab" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Maitree" rel="stylesheet"> 
+        <style>
+            .contact, .map {
+                width: 35%;
+                margin-right: 2.5%;
+                float: left;
+                line-height: 1.7em;
+                margin-bottom: 2%;
+            }
+            .contact {
+                margin-left: 20%;
+            }
+            .contact-container h2 {
+                color: #ff6600;
+                font-weight: 300;
+            }
+            .contact-container {
+                padding-top: 2%; 
+                margin-bottom: 2%; 
+                width: 100%; 
+                float: left;
+            }
+            .contact-container:nth-child(odd) {
+                background-color: rgb(244,244,244);
+            }
+            iframe {
+                box-shadow: 0px 0px 10px #999999;
+                border-radius: 270px;
+                height: 270px;
+                width: 270px;
+            }
+            .footer {
+                background-color: white;
+            }
+            @media only screen and (max-width: 750px) {
+                .contact, .map {
+                    width: 35%;
+                    margin-right: 5%;
+                    float: left;
+                    line-height: 1.7em;
+                    margin-bottom: 2%;
+                }
+                .contact-container * {
+                    font-size: 0.9em;
+                }
+                .contact {
+                    margin-left: 15%;
+                }
+                .contact-container h2 {
+                    color: #ff6600;
+                    font-size: 12pt;
+                    font-weight: 300;
+                }
+                .contact-container {
+                    padding-top: 2%; 
+                    margin-bottom: 2%; 
+                    width: 100%; 
+                    float: left;
+                }
+                .contact-container:nth-child(odd) {
+                    background-color: rgb(244,244,244);
+                }
+                iframe {
+                    box-shadow: 0px 0px 10px #999999;
+                    border-radius: 150px;
+                    height: 150px;
+                    width: 150px;
+                }
+            }
+        </style>
+    </head>
+    <body style="margin: 0">
+        <div class="nav">
+            <div class="body-sub-nav">
+                <ul class="sub-nav">
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="feeds-alumni.html">Cựu Sinh viên</a></li>
+                    <li><a href="feeds-sv.html">Sinh viên</a></li>
+                    <li><a href="http://fpt.edu.vn/tuyen-dung/" target="blank">Nhân viên</a></li>
+                    <li><a href="feeds-fetalk.html">Tin tức &AMP; Sự kiện</a></li>
+                </ul>
+            </div>
+            <div class="div-main-nav">
+                <ul class="main-nav">
+                    <li>
+                        <a href="about.html">Đại học FPT</a>
+                        <ul class="menu">
+                            <li><a href="about.html" target="blank">Về chúng tôi</a></li>
+                            <li><a href="about_thongdiep.html"  target="blank">Thư của Hiệu trưởng</a></li>
+                            <li><a style="line-height: 1.5em" href="about_10nam.html" target="blank">10 năm hiện thực<br>Khát Vọng Đổi Thay</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Đào tạo</a>
+                        <ul class="menu">
+                            <li><a href="fac-se.html" target="blank">Kĩ thuật Phần mềm</a></li>
+                            <li><a href="fac-ia.html" target="blank">An toàn Thông tin</a></li>
+                            <li><a href="fac-ba.html" target="blank">Quản trị Kinh doanh</a></li>
+                            <li><a href="fac-finance.html" target="blank">Tài chính Ngân hàng</a></li>
+                            <li><a href="fac-inter.html" target="blank">Kinh doanh Quốc tế</a></li>
+                            <li><a href="fac-gd.html" target="blank">Thiết kế Đồ hoạ</a></li>
+                            <li><a href="fac-arch.html" target="blank">Kiến trúc (MỚI)</a></li>
+                            <li><a href="fac-japling.html" target="blank">Ngôn ngữ Nhật</a></li>
+                            <li><a href="fac-engling.html" target="blank">Ngôn ngữ Anh</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="admission.html">Tuyển sinh</a>
+                        <ul class="menu">
+                            <li><a href="admission.html"  target="blank">Tin tức tuyển sinh</a></li>
+                            <li><a href="admission-quyche.html"  target="blank">Quy chế tuyển sinh</a></li>
+                            <li><a href="admission-huongdan.html" target="blank">Hướng dẫn thi tuyển</a></li>
+                            <li><a href="admission-hocphi.html" target="blank">Học phí</a></li>
+                            <li><a href="admission-hocbong.html" target="blank">Học bổng - Tín dụng</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="international.html">Quốc tế</a>
+                        <ul class="menu" id="ul-last-child">
+                            <li><a href="international.html" target="blank">Hợp tác quốc tế</a></li>
+                            <li><a href="international-exchange.html" target="blank">Trao đổi sinh viên</a></li>
+                            <li><a href="international-signup.html" target="blank">Đăng kí</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <img id="logo1" alt="Đại học FPT" src="resource/logo-fpt.png" onclick="window.open('index.html')"/>
+                <img id="logo2" alt="Đại học FPT" src="resource/10nam.png" onclick="window.open('about_10nam.html')"/>
+            </div>
+        </div>
+        <div>
+            <div class="contact-container">
+                <div class="contact">
+                    <h2>Hoà Lạc</h2>
+                    Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc
+                    <br>
+                    Km29 Đại lộ Thăng Long, huyện Thạch Thất, Hà Nội
+                    <br>
+                    <strong>Điện thoại: </strong> (04) 73001866
+                    <br>
+                    <strong>Tư vấn: </strong> (04) 7300 5588 / 0932 14 8686
+                    <br>
+                    <strong>Email: </strong> daihocfpt@fpt.edu.vn
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4814943885467!2d105.52427821493234!3d21.013411786006618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3c62e29d8ab37e4!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBGUFQ!5e0!3m2!1svi!2s!4v1475754315646" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="contact">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4576450277996!2d106.62765816133954!3d10.852754620314583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x213883275b5eff07!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBGUFQsIFRQLiBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1475754408103"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="map">
+                    <h2>Hồ Chí Minh</h2>
+                    Lầu 2 tòa nhà Innovation, lô 24, Công viên Phần mềm Quang Trung
+                    <br>
+                    Phường Tân Chánh Hiệp, Quận 12, TP. Hồ Chí Minh
+                    <br>
+                    <strong>Điện thoại: </strong> (08) 73001866
+                    <br>
+                    <strong>Tư vấn: </strong> (08) 7300 5588
+                    <br>
+                    <strong>Email: </strong> daihocfpt@fpt.edu.vn
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="contact">
+                    <h2>Đà Nẵng</h2>
+                    137 Nguyễn Thị Thập, Quận Liên Chiểu, TP. Đà Nẵng
+                    <br>
+                    <strong>Điện thoại: </strong> (0511) 73001866
+                    <br>
+                    <strong>Tư vấn: </strong> (0511) 3735 913
+                    <br>
+                    <strong>Email: </strong> daihocfpt@fpt.edu.vn
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.8036911986237!2d108.16761566422402!3d16.075673593536767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcaff29dfb73f0ac!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBGUFQsIMSQw6AgTuG6tW5n!5e0!3m2!1svi!2s!4v1475754473730" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><h4>KHÁM PHÁ</h4>
+                    <ul>
+                        <li><a href="about.html" target="blank">Về chúng tôi</a></li>
+                        <li><a href="fac.html" target="blank">Chương trình đào tạo</a></li>
+                        <li><a href="admission.html" target="blank">Tuyển sinh</a></li>
+                        <li><a href="international.html" target="blank">Hợp tác Quốc tế</a></li>
+                        <li><a href="http://fpt.edu.vn/chuong-trinh-dao-tao/" target="blank">Các hệ đào tạo khác</a></li>
+                    </ul>
+                </li>
+                <li><h4>GIẢNG ĐƯỜNG</h4>
+                    <ul>
+                        <li><a href="http://viewdaihoc.fpt.edu.vn/">Cơ sở Hoà Lạc</a></li>
+                        <li><a href="http://viewdaihoc.fpt.edu.vn/Ho_Chi_Minh/">Cơ sở Hồ Chí Minh</a></li>
+                        <li><a href="http://library.fus.edu.vn">Thư viện</a></li>
+                    </ul>
+                </li>
+                <li><h4>LIÊN KẾT NGOÀI</h4>
+                    <ul>
+                        <li><a href="http://chungta.vn" target="blank">Chungta.vn</a></li>
+                        <li><a href="http://fpt.edu.vn" target="blank">Khối giáo dục FE</a></li>
+                        <li><a href="http://cocdoc.fpt.edu.vn/" target="blank">Cóc đọc</a></li>
+                    </ul>
+                </li>
+                <li><h4>TRUY CẬP NHANH</h4>
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.win7.fptexamtest" target="blank">Thi thử vào FU</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="credit">
+            <span style="font-family: 'Noto Serif', serif; font-size: 10pt;">Copyright &copy; 2015 FPT University, All rights reserved -
+                Trường Đại Học FPT giữ bản quyền nội dung trên website này.</span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>
+                    #slide >div{
+                        width: 20%; height: 500px;display: inline-block; float: left
+                    }
+                    .right-in{
+                        transform: translateX(-20%);
+                        transition: transform 0.5s;
+                    }
+                    .slide {
+                        width: 500%; height: 500px; position: absolute; left: 0; top: 0px; overflow: hidden;
+                        
+                    }
+                    img {
+                        margin-top: -15%;
+                        width: 100%;
+                    }
+                    .feeds {
+                        width: 100%; height: 510px; position: absolute; left: 0; top: 50px; overflow-x: hidden;
+                    }
+                </style>
+    </head>
+    <body onload="doihinh()">
+        
+         <div class="feeds">
+             <div id="slide" class="slide">
+                 <div><img src="resource/camp-fire-.jpg"/> </div>
+                 <div><img src="resource/newfeed1.jpg"/></div>
+                 <div><img src="resource/10nam-khat-vong.png"/></div>
+                 <div><img src="resource/logo-fpt-2.png"/></div>
+                 <div><img src="resource/logo-fpt.png"/></div>
+             </div>
+             <div style="height: 10px; width: 100%; position: absolute; bottom: 0"><span style="position: absolute; left: 0; cursor: pointer" onclick="next()">Next</span><span style="position: absolute;right: 0; cursor: pointer" onclick="back()">Back</span></div>
+         </div>
+        <script src="js/slide.js">
+	</script>
+    </body>
+</html>

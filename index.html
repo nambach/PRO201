@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="icon" href="resource/fptico.png" type="image/x-icon"/>
+        <title>Đại học FPT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/slide.css"/>
+        <link rel="stylesheet" href="css/news.css"/>
+        <link rel="stylesheet" href="css/faculty.css"/>
+        <link rel="stylesheet" href="css/nav.css"/>
+        <link rel="stylesheet" href="css/footer-credit.css"/>
+        <style>
+            * {
+                font-family: Constantia, serif;
+            }
+            a {
+                text-decoration: none;
+            }
+            .body {
+                width: 100%;height: auto; position: absolute;top: 0;left: 0;z-index: 0;  
+            }
+            .body >div {
+                position: relative;
+                width: 100%;
+            }
+               
+            .field-description {
+                font-family: Arial, san-serif;
+            }
+        </style>
+    </head>
+    <body onload="slideBarAuto()">
+        <div style="background-color: #ff6600; width: 100%; position: absolute; z-index: 0;top: 0px; left: 0px;height: 45px;"></div>
+        <div class="nav">
+            <div style="width: 100%; height: 45px; float: left">
+                <ul class="sub-nav">
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="feeds-alumni.html">Cựu Sinh viên</a></li>
+                    <li><a href="feeds-sv.html">Sinh viên</a></li>
+                    <li><a href="http://fpt.edu.vn/tuyen-dung/" target="blank">Nhân viên</a></li>
+                    <li><a href="feeds-fetalk.html">Tin tức &AMP; Sự kiện</a></li>
+                </ul>
+            </div>
+            <div class="div-main-nav">
+                <ul class="main-nav">
+                    <li>
+                        <a href="about.html">Đại học FPT</a>
+                        <ul class="menu">
+                            <li><a href="about.html" target="blank">Về chúng tôi</a></li>
+                            <li><a href="about_thongdiep.html"  target="blank">Thư của Hiệu trưởng</a></li>
+                            <li><a style="line-height: 1.5em" href="about_10nam.html" target="blank">10 năm hiện thực<br>Khát Vọng Đổi Thay</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Đào tạo</a>
+                        <ul class="menu">
+                            <li><a href="fac-se.html" target="blank">Kĩ thuật Phần mềm</a></li>
+                            <li><a href="fac-ia.html" target="blank">An toàn Thông tin</a></li>
+                            <li><a href="fac-ba.html" target="blank">Quản trị Kinh doanh</a></li>
+                            <li><a href="fac-finance.html" target="blank">Tài chính Ngân hàng</a></li>
+                            <li><a href="fac-inter.html" target="blank">Kinh doanh Quốc tế</a></li>
+                            <li><a href="fac-gd.html" target="blank">Thiết kế Đồ hoạ</a></li>
+                            <li><a href="fac-arch.html" target="blank">Kiến trúc (MỚI)</a></li>
+                            <li><a href="fac-japling.html" target="blank">Ngôn ngữ Nhật</a></li>
+                            <li><a href="fac-engling.html" target="blank">Ngôn ngữ Anh</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="admission.html">Tuyển sinh</a>
+                        <ul class="menu">
+                            <li><a href="admission.html"  target="blank">Tin tức tuyển sinh</a></li>
+                            <li><a href="admission-quyche.html"  target="blank">Quy chế tuyển sinh</a></li>
+                            <li><a href="admission-huongdan.html" target="blank">Hướng dẫn thi tuyển</a></li>
+                            <li><a href="admission-hocphi.html" target="blank">Học phí</a></li>
+                            <li><a href="admission-hocbong.html" target="blank">Học bổng - Tín dụng</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="international.html">Quốc tế</a>
+                        <ul class="menu" id="ul-last-child">
+                            <li><a href="international.html" target="blank">Hợp tác quốc tế</a></li>
+                            <li><a href="international-exchange.html" target="blank">Trao đổi sinh viên</a></li>
+                            <li><a href="international-signup.html" target="blank">Đăng kí</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <img id="logo1" alt="Đại học FPT" src="resource/logo-fpt.png" onclick="window.open('index.html')"/>
+                <img id="logo2" alt="Đại học FPT" src="resource/10nam.png" onclick="window.open('about_10nam.html')"/>
+            </div>
+        </div>
+        <div class="body">
+            <div style="height: 45px;"></div>
+            <div class="feeds">
+                <div id="slide" class="slide">
+                    <div id="1"><img src="resource/camp-fire-.jpg"/> </div>
+                    <div id="2"><img src="resource/engling.jpg"/></div>
+                    <div id="3"><img src="resource/bg8.jpg"/></div>
+                    <div id="4"><img src="resource/about1.jpg"/></div>
+                    <div id="5"><img src="resource/slider2.jpg"/></div>
+                </div>
+                <div class="slide-bar">
+                    <span style="position: absolute; right: 10px; cursor: pointer" onclick="next()" onmouseover="stop()" onmouseout="clearStop()">Next</span>
+                    <span style="position: absolute; right: 100px; background-color: transparent; border: 1px solid transparent; font-size: 14pt; transform: translateY(-5px)" onmouseover="stop()" onmouseout="clearStop()">
+                        <span style="background-color: rgba(255,102,0,0.9)" onclick="nextTo(this)">1</span><span onclick="nextTo(this)">2</span><span onclick="nextTo(this)">3</span><span onclick="nextTo(this)">4</span><span onclick="nextTo(this)">5</span>   
+                    </span>
+                    <span style="position: absolute;left: 10px; cursor: pointer" onclick="back()" onmouseover="stop()" onmouseout="clearStop()">Back</span>
+                </div>
+                <script src="js/slide.js">
+                </script>
+            </div>
+            <div class="news" style="height: 500px">
+                <div class="column-news">
+                    <div class="news-img">
+                        <img src="resource/huong-quynh.jpg"/>
+                    </div>
+                    <div class="news-content">
+                        <p>Cựu sinh viên</p>
+                        <h2 onclick="window.open('feeds-alumni.html')">Đại học FPT - mỗi ngày đến trường là một niềm vui</h2>
+                        <p class="news-text">Khi vào học ở Đại học FPT, em thấy quyết định của mình hoàn toàn đúng đắn. 
+                            Tại đây, em được sống và học tập trong môi trường công bằng, minh bạch và dân chủ...</p>
+                        <span onclick="window.open('feeds-alumni.html')">Đọc thêm</span>&nbsp; <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="column-news">
+                    <div class="news-img">
+                        <img src="resource/Trai-tim.jpg"/>
+                    </div>
+                    <div class="news-content">
+                        <p>Sinh viên FU</p>
+                        <h2 onclick="window.open('feeds-sv.html')">FU và tôi - chúng ta không hoàn hảo</h2>
+                        <p class="news-text">Gần một năm, nó quá dài để tôi kịp nhận thức mình thay đổi đến mức nào.
+                            FPTU cho tôi nhiều và lấy đi không hề ít.</p>
+                        <span onclick="window.open('feeds-sv.html')">Đọc thêm</span>&nbsp; <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="column-news">
+                    <div class="news-img">
+                        <img src="resource/fe-talk.jpg"/>
+                    </div>
+                    <div class="news-content">
+                        <p>Tin tức - Sự kiện</p>
+                        <h2 onclick="window.open('feeds-fetalk.html')">“Chủ động là chìa khóa, điểm mấu chốt tạo nên thành công”</h2>
+                        <p class="news-text">FE Talk số 5: GS. Ngô Bảo Châu giao lưu cùng sinh viên ĐH FPT được tổ chức vào chiều ngày 12/9 với sự tham gia của diễn giả – nhà toán học nổi tiếng đạt giải thưởng Fields năm 2010</p>
+                        <span onclick="window.open('feeds-fetalk.html')">Đọc thêm</span>&nbsp; <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="field-container" id="field">
+                <div class="field">
+                    <div class="field-img">
+                        <div class="dropdown">
+                            <div onclick="window.open('fac-se.html')">
+                                KĨ THUẬT PHẦN MỀM
+                            </div>
+                            <div onclick="window.open('fac-ia.html')">
+                                AN TOÀN THÔNG TIN
+                            </div>
+                        </div>
+                        <img src="resource/eningeering.jpg"/>
+                    </div>
+                    <div id="field-content">
+                        <div><h3>KHỐI NGÀNH KĨ THUẬT</h3></div>
+                        <div class="field-description"><p>Tại trường Đại học FPT, Kỹ thuật phần mềm là ngành học có tiếng và lâu đời nhất. 
+                                Hiện tại, sinh viên trường Đại học FPT đã có mặt tại các quốc gia như Mỹ, Anh, Nhật Bản, Singapore - những thị trường CNTT quan trọng của thế giới. 
+                                Đại học FPT cũng là một trong số ít những trường đầu tiên tại Việt Nam tiên phong tuyển sinh và đào tạo kỹ sư An toàn thông tin bắt đầu từ năm 2013. </p></div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div id="field-content">
+                        <div><h3>KHỐI NGÀNH KINH TẾ</h3></div>
+                        <div class="field-description"><p>Với kỳ vọng mang lại sự đột phá mới về chương trình đào tạo, cung cấp cho thị trường lao động Việt Nam và thế giới một đội ngũ nhân sự chất lượng, 
+                                chương trình đào tạo ngành Quản trị Kinh Doanh được thiết kế theo chương trình của các trường đại học nổi tiếng của thế giới</p></div>
+                    </div>
+                    <div class="field-img">
+                        <div class="dropdown">
+                            <div onclick="window.open('fac-ba.html')">
+                                QUẢN TRỊ KINH DOANH
+                            </div>
+                            <div onclick="window.open('fac-finance.html')">
+                                TÀI CHÍNH NGÂN HÀNG
+                            </div>
+                            <div onclick="window.open('fac-inter.html')">
+                                KINH DOANH QUỐC TẾ
+                            </div>
+                        </div>
+                        <img src="resource/SB.jpg"/>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="field-img">
+                        <div class="dropdown">
+                            <div onclick="window.open('fac-gd.html')">
+                                &nbsp; THIẾT KẾ ĐỒ HOẠ
+                            </div>
+                            <div onclick="window.open('fac-arch.html')">
+                                KIẾN TRÚC (MỚI)
+                            </div>
+                        </div>
+                        <img src="resource/GD.jpg"/>
+                    </div>
+                    <div id="field-content">
+                        <div><h3>KHỐI NGÀNH THIẾT KẾ</h3></div>
+                        <div class="field-description"><p>Với sự bùng nổ của thương mại điện tử, đặc biệt, khi mua hàng online dần trở thành thói quen của người tiêu dùng, giao diện web được xem là bộ mặt công ty thì dấu ấn của nghề thiết kế đồ họa ngày càng rõ nét. 
+                                Ngành Thiết kế Đồ họa theo hướng công nghệ số (Digital) đang trở thành một làn sóng thu hút đông đảo giới trẻ Việt Nam và châu Á.</p></div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div id="field-content">
+                        <div><h3>KHỐI NGÀNH NGÔN NGỮ</h3></div>
+                        <div class="field-description">
+                            <p>Sự có mặt của các doanh nghiệp Nhật Bản tại Việt Nam ngày càng mở ra nhiều cơ hội việc làm với mức đãi ngộ tốt, thu nhập cao cho nhân sự Việt Nam thành thạo tiếng Nhật.
+                                <br>
+                                Tháng 8/2015, Đại học FPT vừa ký kết hợp chiến lược về khảo thí tiếng Anh với Hội đồng Anh, tạo nền tảng quan trọng trong đảm bảo chất lượng giáo dục và chuẩn tiếng Anh đầu ra cho sinh viên.
+                            </p></div>
+                    </div>
+                    <div class="field-img" style="border-top: 5px solid #ff6600; box-sizing: border-box">
+                        <div class="dropdown">
+                            <div onclick="window.open('fac-japling.html')">
+                                NGÔN NGỮ NHẬT
+                            </div>
+                            <div onclick="window.open('fac-engling.html')">
+                                NGÔN NGỮ ANH
+                            </div>
+                        </div>
+                        <img src="resource/JP.jpg" style="margin-top: -60px;"/>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li><h4>KHÁM PHÁ</h4>
+                        <ul>
+                            <li><a href="about.html" target="blank">Về chúng tôi</a></li>
+                            <li><a href="fac.html" target="blank">Chương trình đào tạo</a></li>
+                            <li><a href="admission.html" target="blank">Tuyển sinh</a></li>
+                            <li><a href="international.html" target="blank">Hợp tác Quốc tế</a></li>
+                            <li><a href="http://fpt.edu.vn/chuong-trinh-dao-tao/" target="blank">Các hệ đào tạo khác</a></li>
+                        </ul>
+                    </li>
+                    <li><h4>GIẢNG ĐƯỜNG</h4>
+                        <ul>
+                            <li><a href="http://viewdaihoc.fpt.edu.vn/">Cơ sở Hoà Lạc</a></li>
+                            <li><a href="http://viewdaihoc.fpt.edu.vn/Ho_Chi_Minh/">Cơ sở Hồ Chí Minh</a></li>
+                            <li><a href="http://library.fus.edu.vn">Thư viện</a></li>
+                        </ul>
+                    </li>
+                    <li><h4>LIÊN KẾT NGOÀI</h4>
+                        <ul>
+                            <li><a href="http://chungta.vn" target="blank">Chungta.vn</a></li>
+                            <li><a href="http://fpt.edu.vn" target="blank">Khối giáo dục FE</a></li>
+                            <li><a href="http://cocdoc.fpt.edu.vn/" target="blank">Cóc đọc</a></li>
+                        </ul>
+                    </li>
+                    <li><h4>TRUY CẬP NHANH</h4>
+                        <ul>
+                            <li><a href="https://play.google.com/store/apps/details?id=com.win7.fptexamtest" target="blank">Thi thử vào FU</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="credit">
+                <span style="font-family: 'Noto Serif', serif; font-size: 10pt;">Copyright &copy; 2015 FPT University, All rights reserved -
+                    Trường Đại Học FPT giữ bản quyền nội dung trên website này.</span>
+            </div>
+        </div>
+    </body>
+</html>

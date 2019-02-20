@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <style>
+            .column-news {
+                width: 30%;
+                padding: 1.66%; 
+                float: left
+            }
+            .news-img {
+                width: 100%;
+                max-height: 150px;
+                overflow: hidden;
+            }
+            .column-news:first-child .news-img {
+                border-bottom: 5px solid #ff6600;
+            }
+            .column-news:nth-child(2) .news-img {
+                border-bottom: 5px solid #ff6600;
+            }
+            .column-news:last-child .news-img {
+                border-bottom: 5px solid #ff6600;
+            }
+            .column-news img {
+                width: 100%;
+                margin-bottom: -10px;
+            }
+            .news-content {
+                color: #2d2d2d;
+                padding: 0px 10px;
+                font-stretch: semi-expanded;
+            }
+            .news-content p:first-child {
+                font-variant: small-caps;
+            }
+            .news-text {
+                font-style: italic;
+            }
+            .news-content span, i {
+                font-size: 1.2em;
+                color: #ff6600;
+                font-weight: 500;
+            }
+            .news-content span:hover {
+                text-decoration: underline;
+                cursor: pointer
+            }
+            .news h2:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="news">
+            <div class="column-news">
+                <div class="news-img">
+                    <img src="resource/huong-quynh.jpg"/>
+                </div>
+                <div class="news-content">
+                    <p>Cựu sinh viên</p>
+                    <h2>Đại học FPT - mỗi ngày đến trường là một niềm vui</h2>
+                    <p class="news-text">Khi vào học ở Đại học FPT, em thấy quyết định của mình hoàn toàn đúng đắn. 
+                        Tại đây, em được sống và học tập trong môi trường công bằng, minh bạch và dân chủ . . .</p>
+                    <span>Đọc thêm</span>&nbsp; <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="column-news">
+                <div class="news-img">
+                    <img src="resource/Trai-tim.jpg"/>
+                </div>
+                <div class="news-content">
+                    <p>Cựu sinh viên</p>
+                    <h2>FU và tôi - chúng ta không hoàn hảo</h2>
+                    <p class="news-text">Gần một năm, nó quá dài để tôi kịp nhận thức mình thay đổi đến mức nào.
+                        FPTU cho tôi nhiều và lấy đi không hề ít.</p>
+                    <span>Đọc thêm</span>&nbsp; <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="column-news">
+                <div class="news-img">
+                    <img src="resource/fe-talk.jpg"/>
+                </div>
+                <div class="news-content">
+                    <p>Cựu sinh viên</p>
+                    <h2 onclick="openPage('index.html')">“Chủ động là chìa khóa, điểm mấu chốt tạo nên thành công”</h2>
+                    <p class="news-text">FE Talk số 5: GS. Ngô Bảo Châu giao lưu cùng sinh viên ĐH FPT được tổ chức vào chiều ngày 12/9 với sự tham gia của diễn giả – nhà toán học nổi tiếng đạt giải thưởng Fields năm 2010</p>
+                    <span>Đọc thêm</span>&nbsp; <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <script src="js/homepage.js">
+        </script>
+    </body>
+</html>
